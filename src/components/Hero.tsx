@@ -1,4 +1,4 @@
-const DOWNLOAD_LINK = "https://github.com/OUSSAMA-GATTAOUI/pichalyze/releases/latest/download/Pichalyze_v1.0.zip";
+const DOWNLOAD_LINK = "https://github.com/OUSSAMA-GATTAOUI/pichalyze-releases/releases/latest/download/Pichalyze_v1.0.zip";
 
 const tableRows = [
   { id: "#8842", time: "2023-10-24 14:02:11", ip: "192.168.1.45", size: "1,420 KB", status: "ACTIVE", color: "primary", latency: "12ms" },
@@ -16,34 +16,26 @@ const statusColors: Record<string, string> = {
 const Hero = () => (
   <section className="min-h-screen flex flex-col items-center justify-center text-center pt-[150px] pb-[100px] px-[5%] relative">
     <div className="grid-bg" />
-
     <div className="reveal bg-accent-muted border border-primary px-4 py-1.5 rounded-sm mb-8 flex items-center gap-2.5">
       <div className="led-dot" />
       <span className="font-mono-display">System Status: Operational</span>
     </div>
-
     <h1 className="reveal font-display text-[clamp(4rem,10vw,8rem)] leading-[0.9] mb-6">
       Turn raw data into
       <br />
       <span className="text-primary">clean insights</span>
     </h1>
-
     <p className="reveal max-w-[600px] text-muted-foreground mb-10 text-lg">
       Professional-grade data analysis for Windows. Your files stay on your machine — lightning fast, no Python scripts required.
     </p>
-
     <div className="reveal flex gap-4 mb-16 flex-wrap justify-center">
-      <a
-        href={DOWNLOAD_LINK}
-        className="font-mono text-xs px-6 py-3 bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all"
-      >
+      <a href={DOWNLOAD_LINK} className="font-mono text-xs px-6 py-3 bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all">
         DOWNLOAD FOR WINDOWS
       </a>
       <a href="#features" className="font-mono text-xs px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all">
         EXPLORE FEATURES
       </a>
     </div>
-
     <div className="reveal w-full max-w-[1000px] bg-surface border border-border rounded-md overflow-hidden relative shadow-[0_40px_100px_rgba(0,0,0,0.5)]" style={{ transitionDelay: "0.2s" }}>
       {[
         "top-[-10px] left-[-10px] border-r-0 border-b-0",
@@ -53,7 +45,6 @@ const Hero = () => (
       ].map((pos, i) => (
         <div key={i} className={`absolute w-[30px] h-[30px] border-2 border-primary z-10 pointer-events-none ${pos}`} />
       ))}
-
       <div className="bg-surface-elevated px-5 py-2.5 flex justify-between items-center border-b border-border">
         <div className="flex gap-2">
           <div className="w-2.5 h-2.5 rounded-full bg-muted" />
@@ -62,7 +53,6 @@ const Hero = () => (
         </div>
         <span className="font-mono-display text-[0.6rem]">pichalyze_v1.0 — session_active</span>
       </div>
-
       <div className="overflow-x-auto">
         <table className="w-full border-collapse font-mono text-xs text-left">
           <thead>

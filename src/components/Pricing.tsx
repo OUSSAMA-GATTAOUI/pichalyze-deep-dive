@@ -1,5 +1,6 @@
 const GUMROAD_MONTHLY_LINK = "https://pichalyze.gumroad.com/l/yxvos";
 const GUMROAD_YEARLY_LINK  = "https://pichalyze.gumroad.com/l/bdtmm";
+const DOWNLOAD_FREE_LINK   = "https://github.com/OUSSAMA-GATTAOUI/pichalyze-releases/releases/latest/download/Pichalyze_v1.0.zip";
 
 const freeFeatures = [
   "CSV, Excel & JSON (up to 8 MB)",
@@ -42,10 +43,7 @@ const Pricing = () => (
             </li>
           ))}
         </ul>
-        <a
-          href="https://github.com/OUSSAMA-GATTAOUI/pichalyze/releases/latest/download/Pichalyze_v1.0.zip"
-          className="font-mono text-xs px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all w-full inline-flex justify-center"
-        >
+        <a href={DOWNLOAD_FREE_LINK} className="font-mono text-xs px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all w-full inline-flex justify-center">
           DOWNLOAD FREE
         </a>
       </div>
@@ -67,26 +65,14 @@ const Pricing = () => (
             </li>
           ))}
         </ul>
-
         <div className="flex flex-col gap-3 mb-4">
-          <a
-            href={GUMROAD_MONTHLY_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-xs px-6 py-3 bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all w-full inline-flex justify-center"
-          >
+          <a href={GUMROAD_MONTHLY_LINK} target="_blank" rel="noopener noreferrer" className="font-mono text-xs px-6 py-3 bg-primary text-primary-foreground border border-primary hover:bg-transparent hover:text-primary transition-all w-full inline-flex justify-center">
             GET PRO MONTHLY — $10/MO
           </a>
-          <a
-            href={GUMROAD_YEARLY_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-xs px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all w-full inline-flex justify-center"
-          >
+          <a href={GUMROAD_YEARLY_LINK} target="_blank" rel="noopener noreferrer" className="font-mono text-xs px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all w-full inline-flex justify-center">
             GET PRO YEARLY — $99/YR  (SAVE 17%)
           </a>
         </div>
-
         <p className="text-muted-foreground text-xs font-mono">
           Visa · Mastercard · PayPal · Apple Pay · Google Pay
         </p>

@@ -1,4 +1,4 @@
-const DOWNLOAD_LINK = "https://github.com/OUSSAMA-GATTAOUI/pichalyze/releases/latest/download/Pichalyze_v1.0.zip";
+const DOWNLOAD_LINK = "https://github.com/OUSSAMA-GATTAOUI/pichalyze-releases/releases/latest/download/Pichalyze_v1.0.zip";
 
 const CTABanner = () => (
   <div className="reveal bg-primary text-primary-foreground text-center py-24 px-[5%]">
@@ -6,10 +6,7 @@ const CTABanner = () => (
     <p className="text-primary-foreground/70 mb-10 text-sm font-mono max-w-[400px] mx-auto">
       Free to download. No account required to get started.
     </p>
-    <a
-      href={DOWNLOAD_LINK}
-      className="font-mono text-xs px-6 py-3 border border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all inline-flex items-center gap-2"
-    >
+    <a href={DOWNLOAD_LINK} className="font-mono text-xs px-6 py-3 border border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all inline-flex items-center gap-2">
       DOWNLOAD PICHALYZE.EXE
     </a>
   </div>
